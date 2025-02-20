@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 const corsOptions = {
-    origin: ['http://localhost:3000', 'https://blogapp-client-gamma.vercel.app'],
+    origin: ['http://localhost:3000', 'https://blogapp-server-1-uj1f.onrender.com', 'https://blogapp-client-gamma.vercel.app'],
     credentials: true,
     optionsSuccessStatus: 200 
 };
