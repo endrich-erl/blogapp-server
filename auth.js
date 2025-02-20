@@ -1,8 +1,6 @@
 const jwt = require("jsonwebtoken");
 const secret = "BlogAPI";
 
-require('dotenv').config();
-
 module.exports.createAccessToken = (user) => {
 
         const data = {

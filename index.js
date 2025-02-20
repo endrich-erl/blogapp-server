@@ -2,8 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 
-// const port = 4000;
-require('dotenv').config();
+const port = 4000;
 
 const app = express();
 
@@ -19,7 +18,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 
-mongoose.connect(process.env.MONGODB_STRING);
+mongoose.connect("mongodb+srv://erlendrich:admin123@cluster0.6tr9g.mongodb.net/blog-API?retryWrites=true&w=majority&appName=Cluster0");
 
 mongoose.connection.once('open', () => console.log('Now connected to MongoDB Atlas.'));
 
